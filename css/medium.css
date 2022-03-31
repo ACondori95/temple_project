@@ -1,0 +1,93 @@
+@media screen and (min-width: 37em) {
+  h1 {
+    font-size: 3em;
+  }
+
+  header,
+  footer {
+    border-radius: 15px;
+  }
+
+  nav li {
+    font-size: 1em;
+  }
+
+  #hamburgerBtn span:nth-child(1) {
+    font-size: 1.7em;
+  }
+
+  main {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  }
+
+  #banner {
+    grid-column: 1/9;
+    grid-row: 1/2;
+  }
+
+  #main-picture {
+    grid-column: 1/9;
+    grid-row: 2/3;
+  }
+
+  #main-image1 {
+    display: none;
+  }
+
+  #main-image2 {
+    display: block;
+    width: 100%;
+  }
+
+  #call-to-action {
+    font-size: 2em;
+  }
+
+  #main-temple-info {
+    grid-column: 2/8;
+    grid-row: 3/4;
+  }
+
+  #main-temple1 {
+    display: none;
+  }
+
+  #main-temple2 {
+    display: block;
+    width: 100%;
+  }
+
+  #contact-info {
+    grid-column: 2/8;
+    grid-row: 4/5;
+  }
+
+  #weather-grid {
+    grid-column: 1/8;
+    grid-row: 5/6;
+  }
+
+  #weather-img2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+
+  #forecastmin2 {
+    grid-column: 1/2;
+    text-align: center;
+  }
+
+  #imgday2 {
+    grid-column: 2/3;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+  }
+
+  #forecastmax2 {
+    grid-column: 3/4;
+    text-align: center;
+  }
+}
