@@ -476,3 +476,49 @@ footer a {
   grid-column: 3/4;
   text-align: center;
 }
+
+#view img {
+  width: 100px;
+}
+
+#view {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+#view button {
+  background-color: var(--languid-lavender);
+  margin: 0;
+  padding: 0;
+  border: none;
+}
+
+#view button img {
+  width: 100%;
+  border: 2px solid #300455;
+}
+
+#card-btn span:nth-child(1) {
+  display: block;
+}
+
+#card-btn span:nth-child(2) {
+  display: none;
+}
+
+#card-btn.open span:nth-child(1) {
+  display: none;
+}
+
+#card-btn.open span:nth-child(2) {
+  display: block;
+}
+
+#cards section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 3px;
+  box-shadow: 2px 2px #300455;
+}
