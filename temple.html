@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Temple Inn & Suites</title>
+  <link rel="stylesheet" href="./css/base.css">
+  <link rel="stylesheet" href="./css/medium.css">
+  <link rel="stylesheet" href="./css/large.css">
+</head>
+
+<body>
+  <header>
+    <div id="header-grid">
+      <a href="./index.html" target="_self"><img src="./images/logo_size.webp" alt="temple inn and suites logo"
+          class="logo"></a>
+      <div id="header-links">
+        <div>
+          <a href="https://www.facebook.com" target="_blank"><img src="./images/facebook-circular-icon.png"
+              alt="facebook logo" id="facebook"></a>
+          <a href="https://www.instagram.com" target="_blank"><img src="./images/Instagram-circular-icon.png"
+              alt="instagram logo" id="instagram"></a>
+        </div>
+      </div>
+    </div>
+    <div id="header-bottom">
+      <nav id="header-nav">
+        <button id="hamburgerBtn"><span>&#9776;</span><span>X</span></button>
+        <ul id="primary-nav">
+          <li><a href="./index.html">Home</a></li>
+          <li><a class="active" href="./temple.html">Temple</a></li>
+          <li><a href="#">Reservation</a></li>
+          <li><a href="#">Services</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    
+    <div class="cards"></div>
+
+  </main>
+
+  <footer>
+    <div id="footer-logo">
+      <a href="./index.html"><img src="./images/logo_size_invert.webp" alt="inverted main logo"></a>
+    </div>
+    <div>
+      <h6>
+        templeinnandsuites@email.com
+      </h6>
+    </div>
+    <div id="footer-map">
+      <a href="https://goo.gl/maps/ARVnEdsoSy5hWAMHA" target="_blank">
+        <img src="./images/temple_inn_map.png" alt="map to the temple inn" id="map-img">
+      </a>
+    </div>
+    <div>
+      <p>&copy; <span id="this-year">year</span> | Temple Inn & Suites | Weather forcast from <a
+          href="https://openweathermap.org/">OpenWeatherMap</a></p>
+    </div>
+  </footer>
+
+  <script src="./js/weather_forecast.js"></script>
+  <script src="./js/toggle-menu.js"></script>
+  <script src="./js/this-year.js"></script>
+  <script src="./js/cards.js"></script>
+
+</body>
+
+</html>
