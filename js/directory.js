@@ -1,35 +1,37 @@
-const request = 'https://acondori95.github.io/temple_project/data/temples.json';
+const requestURL = 'https://byui-cit230.github.io/lessons/lesson-09/data/latter-day-prophets.json';
+const cards = document.querySelector('.cards');
 
-function displayTemple(temple) {
+function displayProphets(prophet) {
   let card = document.createElement('section');
   let h2 = document.createElement('h2');
   let p1 = document.createElement('p');
   let p2 = document.createElement('p');
-  let img = document.createElement('img');
+  let picture = document.createElement('img');
 
-  h2.textContent = `${temple.name}`;
-  h2.setAttribute('id','temple-name');
+  h2.textContent = `${prophet.name} ${prophet.lastname}`;
 
-  img.src = `${temple.imageurl}`;
-  img.setAttribute('alt', `${temple.name} picture`);
-  img.setAttribute('loading','lazy');
+  p1.textContent = `Date of Birth: ${prophet.birthdate}`;
 
-  p1.textContent = `Address: ${temple.address} - ${temple.city}`;
+  p2.textContent = `Place of Birth: ${prophet.birthplace}`;
 
-  p2.innerHTML = `Phone Number: ${temple.telephone}`;
+  picture.setAttribute('src', prophet.imageurl);
+  picture.setAttribute('alt', `Portrait of ${prophet.name} ${prophet.lastname}`);
+  picture.setAttribute('loading', 'lazy');
 
   card.appendChild(h2);
-  card.appendChild(img);
+  card.appendChild(picture);
   card.appendChild(p1);
   card.appendChild(p2);
 
-  document.querySelector('cards').appendChild(card);
+  cards.appendChild(card);
 }
 
-getDirectory();
-
-async function getDirectory() {
-  const response = await fetch(request);
-  const temple_dir = await response.json();
-  temple_dir.forEach(displayTemple);
-}
+fetch(requestURL)
+  .then(function(response) {
+    return response.json();
+  })
+  .then(function(jsonObject) {
+    console.table(jsonObject);
+    const prophets = jsonObject['prophets'];
+    prophets.forEach(displayProphets);
+  })
