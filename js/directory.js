@@ -8,7 +8,7 @@ function displayProphets(temple) {
   let p2 = document.createElement('p');
   let picture = document.createElement('img');
 
-  h2.textContent = `${temple.name} ${prophet.lastname}`;
+  h2.textContent = `${temple.name}`;
 
   p1.textContent = `Address: ${temple.address}`;
 
