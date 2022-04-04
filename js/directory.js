@@ -12,7 +12,7 @@ function displayProphets(temple) {
 
   p1.textContent = `Address: ${temple.address}`;
 
-  p2.textContent = `Telephone: ${temple.address}`;
+  p2.textContent = `Telephone: ${temple.telephone}`;
 
   picture.setAttribute('src', temple.imageurl);
   picture.setAttribute('alt', `Picture of ${temple.name}`);
