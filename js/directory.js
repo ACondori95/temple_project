@@ -1,4 +1,4 @@
-const requestURL = 'https://byui-cit230.github.io/lessons/lesson-09/data/latter-day-prophets.json';
+const requestURL = 'https://acondori95.github.io/temple_project/data/temples.json';
 const cards = document.querySelector('.cards');
 
 function displayProphets(temple) {
@@ -8,14 +8,14 @@ function displayProphets(temple) {
   let p2 = document.createElement('p');
   let picture = document.createElement('img');
 
-  h2.textContent = `${prophet.name} ${prophet.lastname}`;
+  h2.textContent = `${temple.name} ${prophet.lastname}`;
 
-  p1.textContent = `Date of Birth: ${prophet.birthdate}`;
+  p1.textContent = `Address: ${temple.address}`;
 
-  p2.textContent = `Place of Birth: ${prophet.birthplace}`;
+  p2.textContent = `Telephone: ${temple.address}`;
 
-  picture.setAttribute('src', prophet.imageurl);
-  picture.setAttribute('alt', `Portrait of ${prophet.name} ${prophet.lastname}`);
+  picture.setAttribute('src', temple.imageurl);
+  picture.setAttribute('alt', `Picture of ${temple.name}`);
   picture.setAttribute('loading', 'lazy');
 
   card.appendChild(h2);

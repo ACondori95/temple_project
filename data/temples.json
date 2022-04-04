@@ -1,48 +1,44 @@
 {
   "temples": [
     {
-      "name": "Joseph",
-      "lastname": "Smith",
-      "birthdate": "23 December 1805",
-      "death": "27 June 1844",
-      "length": 14,
-      "order": 1,
-      "birthplace": "Vermont",
-      "numofchildren": 11,
-      "imageurl": "https://media.ldscdn.org/images/media-library/gospel-art/latter-day-prophets/american-prophet-joseph-smith-jr-1178035-gallery.jpg"
+      "name": "Fortaleza Brazil Temple",
+      "address": "Avenida Santos Dumont 7771, Fortaleza - CE",
+      "telephone": "(55) 85-3533-7150",
+      "services": "No clothing rental available\nNo cafeteria available\nNo patron housing available\nDistribution center nearby",
+      "history": "Announcement: 3 Oct 2009\nGroudbreaking: 15 Nov 2011\nDedication: 2 Jun 2019",
+      "ordinance": "https://www.churchofjesuschrist.org/temples/schedule/appointment?lang=eng",
+      "closure": "15 Apr 2022 (Limited Operations)\n21 Apr 2022 (Limited Operations)\n1 Oct 2022\n15 Nov 2022\n24 Dec 2022\n31 Dec 2022",
+      "imageurl": "https://acondori95.github.io/temple_project/images/temple_pictures/fortaleza_temple800.jpeg"
     },
     {
-      "name": "Brigham",
-      "lastname": "Young",
-      "birthdate": "01 June 1801",
-      "death": "29 August 1877",
-      "length": 30,
-      "order": 2,
-      "birthplace": "Vermont",
-      "numofchildren": 56,
-      "imageurl": "https://media.ldscdn.org/images/media-library/gospel-art/latter-day-prophets/brigham-young-82908-gallery.jpg"
+      "name": "Fortaleza Brazil Temple",
+      "address": "Avenida Santos Dumont 7771, Fortaleza - CE",
+      "telephone": "(55) 85-3533-7150",
+      "services": "No clothing rental available\nNo cafeteria available\nNo patron housing available\nDistribution center nearby",
+      "history": "Announcement: 3 Oct 2009\nGroudbreaking: 15 Nov 2011\nDedication: 2 Jun 2019",
+      "ordinance": "https://www.churchofjesuschrist.org/temples/schedule/appointment?lang=eng",
+      "closure": "15 Apr 2022 (Limited Operations)\n21 Apr 2022 (Limited Operations)\n1 Oct 2022\n15 Nov 2022\n24 Dec 2022\n31 Dec 2022",
+      "imageurl": "https://acondori95.github.io/temple_project/images/temple_pictures/fortaleza_temple800.jpeg"
     },
     {
-      "name": "John",
-      "lastname": "Taylor",
-      "birthdate": "01 November 1808",
-      "death": "25 July 1887",
-      "length": 6,
-      "order": 3,
-      "birthplace": "England",
-      "numofchildren": 34,
-      "imageurl": "https://media.ldscdn.org/images/media-library/gospel-art/latter-day-prophets/john-taylor-82909-gallery.jpg"
+      "name": "Fortaleza Brazil Temple",
+      "address": "Avenida Santos Dumont 7771, Fortaleza - CE",
+      "telephone": "(55) 85-3533-7150",
+      "services": "No clothing rental available\nNo cafeteria available\nNo patron housing available\nDistribution center nearby",
+      "history": "Announcement: 3 Oct 2009\nGroudbreaking: 15 Nov 2011\nDedication: 2 Jun 2019",
+      "ordinance": "https://www.churchofjesuschrist.org/temples/schedule/appointment?lang=eng",
+      "closure": "15 Apr 2022 (Limited Operations)\n21 Apr 2022 (Limited Operations)\n1 Oct 2022\n15 Nov 2022\n24 Dec 2022\n31 Dec 2022",
+      "imageurl": "https://acondori95.github.io/temple_project/images/temple_pictures/fortaleza_temple800.jpeg"
     },
     {
-      "name": "Russell M.",
-      "lastname": "Nelson",
-      "birthdate": "9 September 1924",
-      "death": null,
-      "length": 2,
-      "order": 17,
-      "birthplace": "Utah",
-      "numofchildren": 10,
-      "imageurl": "https://media.ldscdn.org/images/media-library/church-leadership/first-presidency-and-quorum-of-the-twelve-apostles/russell-nelson-official-portrait-2018-2044670-gallery.jpg"
+      "name": "Fortaleza Brazil Temple",
+      "address": "Avenida Santos Dumont 7771, Fortaleza - CE",
+      "telephone": "(55) 85-3533-7150",
+      "services": "No clothing rental available\nNo cafeteria available\nNo patron housing available\nDistribution center nearby",
+      "history": "Announcement: 3 Oct 2009\nGroudbreaking: 15 Nov 2011\nDedication: 2 Jun 2019",
+      "ordinance": "https://www.churchofjesuschrist.org/temples/schedule/appointment?lang=eng",
+      "closure": "15 Apr 2022 (Limited Operations)\n21 Apr 2022 (Limited Operations)\n1 Oct 2022\n15 Nov 2022\n24 Dec 2022\n31 Dec 2022",
+      "imageurl": "https://acondori95.github.io/temple_project/images/temple_pictures/fortaleza_temple800.jpeg"
     }
   ]
 }
