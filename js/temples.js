@@ -97,13 +97,15 @@
 
 const requestData = "https://acondori95.github.io/wdd230/chamber/data/data.json";
 
-function displayBusiness(business) {
+function displayTemples(business) {
   let card = document.createElement('section');
-  let h2 = document.createElement('h3');
+  let h3 = document.createElement('h3');
   let p1 = document.createElement('p');
   let p2 = document.createElement('p');
   let p3 = document.createElement('p');
   let p4 = document.createElement('p');
+  let p5 = document.createElement('p');
+  let p6 = document.createElement('p');
   let a = document.createElement('a');
   let img1 = document.createElement('img');
 
@@ -140,5 +142,5 @@ async function getDirectory() {
   console.log('get data');
   const response = await fetch(requestData);
   const business_dir = await response.json();
-  business_dir.forEach(displayBusiness);
+  business_dir.forEach(displayTemples);
 }
