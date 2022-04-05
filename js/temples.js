@@ -95,7 +95,7 @@
 //     temples.forEach(displayTemple);
 //   })
 
-const requestData = "https://acondori95.github.io/wdd230/chamber/data/data.json";
+const requestData = 'https://acondori95.github.io/temple_project/data/temples.json';
 
 function displayTemples(business) {
   let card = document.createElement('section');
