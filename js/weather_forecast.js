@@ -1,48 +1,57 @@
-// weather sumary
-
-const apiID = 'e7d484446f21605bcc870dedde9507cd';
-
-const apiURL = `https://api.openweathermap.org/data/2.5/onecall?lat=38.984653&lon=-77.094711&appid=${apiID}&units=imperial`;
+const apiURL = 'https://api.openweathermap.org/data/2.5/onecall?lat=-3.71722&lon=-38.54306&units=Imperial&exclude=hourly,minutly&appid=e7d484446f21605bcc870dedde9507cd';
 
 fetch(apiURL)
   .then((response) => response.json())
   .then((jsObject) => {
+    console.log(jsObject);
+    let tempStr = jsObject.current.temp;
+    let tempF = parseFloat(tempStr);
+    let tempInt = tempF.toFixed(0);
+    document.getElementById('temp-now').textContent = tempInt.toString();
 
-    const currently = document.querySelector('#currently');
-    currently.innerHTML = `<strong>${jsObject.current.weather[0].description.toUpperCase()}</strong>`;
+    const iconSrc = `https://openweathermap.org/img/wn/${jsObject.current.weather[0].icon}@2x.png`;
+    const desc = jsObject.current.weather[0].description;
+    document.querySelector('#weather-icon').setAttribute('src', iconSrc);
+    document.querySelector('#weather-icon').setAttribute('alt', desc);
+    document.querySelector('#weather-desc').textContent = desc;
 
-    const temperature = document.querySelector('#temperature');
-    temperature.innerHTML = jsObject.current.temp;
-
-    const humidity = document.querySelector('#humidity');
-    humidity.innerHTML = jsObject.current.humidity;
-
-    const wind = document.querySelector('#wind-speed');
-    wind.innerHTML = jsObject.current.wind_speed;
-
-
-    const dayofweek = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday', 'Monday', 'Tuesday'];
-
-    i = 1
-    for(z = 1; z < 4; z++) {
-      let d = new Date();
-      document.getElementById(`dayofweek${z}`).textContent = dayofweek[(d.getDay()) + i];
-      document.getElementById(`forecastmin${z}`).innerHTML = jsObject.daily[z].temp.min.toFixed() + '&deg;F';
-      document.getElementById(`forecastmax${z}`).innerHTML = jsObject.daily[z].temp.max.toFixed() + '&deg;F';
-      document.getElementById(`imgday${z}`).setAttribute('src','https://openweathermap.org/img/w/' + jsObject.daily[z].weather[0].icon + '.png');
-      i++;
+    let humidity = jsObject.current.humidity;
+    document.querySelector('#humidity').textContent = humidity;
+    for (d=0; d<3; d++) {
+      let date_str = '#date' + (d+1).toString();
+      let aDate = new Date();
+      let tDate = new Date();
+      tDate.setDate(aDate.getDate() + d);
+      let tDay = tDate.getMonth()+1 + '/' + tDate.getDate();
+      document.querySelector(date_str).textContent = tDay;
+      let day_temp = '#day-temp' + (d+1).toString();
+      let dTemp = jsObject.daily[d].temp.day;
+      document.querySelector(day_temp).textContent = dTemp.toFixed(0);
     }
 
+    const alertList = jsObject.alerts;
+    if (alertList != undefined) {
+      for (i=0; i<alertList.length; i++) {
+        let alertDesc = alertList[i].event;
+        displayWeatherAlert(alertDesc);
+      }
+    }
+
+    function displayWeatherAlert(adesc) {
+      let amsg = document.createElement('div');
+      let p1 = document.createElement('p');
+      let b2 = document.createElement('button');
+
+      amsg.classList.add('alert-divs');
+      p1.textContent = `${adesc}`;
+      amsg.appendChild(p1);
+      b2.textContent = 'X';
+      b2.onclick = 'closealert()';
+      amsg.appendChild(b2);
+      document.querySelector('#wthalert').appendChild(amsg);
+    }
+
+    function closealert() {
+      
+    }
   })
-
-// wind chill
-
-const tempWind = document.getElementById('temperature').innerHTML;
-const wSpeedWind = document.getElementById('wind-speed').innerHTML;
-const wChill = document.getElementById('wind-chill');
-
-if (wSpeedWind > 3 && tempWind <= 50) {
-  wChill.innerText = Math.round(35.74 + (0.6215 * tempWind) - (35.75 * Math.pow(wSpeedWind,0.16)) + (0.4275 * tempWind * Math.pow(wSpeedWind,0.16)));
-} else {
-  wChill.innerText = 'N/A';
-}

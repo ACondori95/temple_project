@@ -1,130 +1,122 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en-us">
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Temple Inn & Suites</title>
-  <link rel="stylesheet" href="./css/normalice.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
   <link rel="stylesheet" href="./css/base.css">
   <link rel="stylesheet" href="./css/medium.css">
   <link rel="stylesheet" href="./css/large.css">
 </head>
 <body>
+
   <header>
-    <div id="header-grid">
-      <a href="./index.html" target="_self"><img src="./images/logo_size.webp" alt="temple inn and suites logo" class="logo"></a>
-      <div id="header-links">
+    <div id="header">
+      <a href="./index.html" target="_self"><img src="./images/logo_size.webp" alt="Temple Inn and Suites logo" class="logo"></a>
+      <div id="header-title">
+        <h1>Temple Inn & Suites</h1>
+        <h2>Comfort and Relax</h2>
+      </div>
+      <div id="header-link">
         <div>
-          <a href="https://www.facebook.com" target="_blank"><img src="./images/facebook-circular-icon.png" alt="facebook logo" id="facebook"></a>
-          <a href="https://www.instagram.com" target="_blank"><img src="./images/Instagram-circular-icon.png" alt="instagram logo" id="instagram"></a>
+          <a href="https://facebook.com" target="_blank"><img src="./images/facebook.png" alt="facebook icon" id="facebook"></a>
+          <a href="https://instagram.com" target="_blank"><img src="./images/instagram.png" alt="instagram icon" id="instagram"></a>
         </div>
       </div>
-    </div>
-    <div id="header-bottom">
+      <div id="header-date">
+        <h3 id="todays-date">today date</h3>
+      </div>
       <nav id="header-nav">
-        <button id="hamburgerBtn"><span>&#9776;</span><span>X</span></button>
+        <button id="hamburger-btn"><span>&#9776;</span><span>X</span></button>
         <ul id="primary-nav">
-          <li><a class="active" href="./index.html">Home</a></li>
+          <li><a href="./index.html" class="active">Home</a></li>
           <li><a href="./temple.html">Temple</a></li>
-          <li><a href="#">Reservation</a></li>
-          <li><a href="#">Services</a></li>
+          <li><a href="./reservation.html">Reservation</a></li>
+          <li><a href="./services.html">Services</a>
+            <ul>
+              <li><a href="./reception.html">Reception</a></li>
+              <li><a href="./missionary.html">Temple Missionary</a></li>
+            </ul>
+          </li>
         </ul>
       </nav>
     </div>
   </header>
-  <main>
 
-    <h1 id="banner">Temple Inn & Suites</h1>
+  <main id="home">
 
-    <section id="main-picture">
-      <img src="./images/temple_pictures/washington_dc_temple500.jpg" alt="temple of washington dc" id="main-image1">
-      <img src="./images/temple_pictures/washington_dc_temple1000.jpg" alt="temple of washington dc" id="main-image2">
-      <p id="call-to-action"><a href="#">BOOK NOW</a></p>
-    </section>
-
-    <section id="main-temple-info">
+    <section id="main-temple">
+      <h3>Main Temple</h3>
       <picture>
-        <img src="./images/temple_pictures/fortaleza_temple400.jpg" alt="temple of brazil fortaleza" id="main-temple1">
-        <img src="./images/temple_pictures/fortaleza_temple800.jpeg" alt="temple of brazil fortaleza" id="main-temple2">
+        <source media="(min-width: 500px)" srcset="./images/temple_pictures/washington_dc_temple1000.jpg">
+        <img src="./images/temple_pictures/washington_dc_temple500.jpg" alt="temple image" id="temple-img">
       </picture>
-      <h3>Fortaleza Brazil Temple</h3>
-      <p>This Temple was originally announced at the General Conference of October 3<sup>rd</sup>, 2009. After that, the construction started officially in the year 2011, November 15<sup>th</sup>.</p>
-      <p>After several difficulties during its construnction, the temple was officially dedicated eight yars later, on June 2<sup>nd</sup>, 2019.</p>
-      <p>The temple is located nearby one of the most beautiful beaches in the city. The address is Avenida Santos Dumont 7771, and it's currently on service.</p>
-      <p>Read the dedicatory prayer <a href="https://www.churchofjesuschrist.org/temples/details/fortaleza-brazil-temple/prayer/2019-06-02?lang=eng" target="_blank">HERE</a>.</p>
+      <p id="call-to-action"><a href="#">Make a Reservation</a></p>
     </section>
 
-    <section id="contact-info">
-      <h3>Contact Info</h3>
-      <p>Email: <a href="mailto:templeinnandsuites@email.com">templeinnandsuites@email.com</a></p>
-      <p>Telephone: <a href="tel:+543871234567" target="_blank">(+54) 387-123-4567</a></p>
-      <p>Address: <a href="https://goo.gl/maps/ARVnEdsoSy5hWAMHA" target="_blank">4800 Montgomery Ln #300</a></p>
+    <section id="temple-info">
+      <h3>Main Temple</h3>
+      <img src="./images/temple_pictures/fortaleza_temple800.jpeg" alt="fortaleza temple image">
+      <p class="small-hidden">This Temple was originally announced at the General Conference of October 3<sup>rd</sup>, 2009. After that, the construction started officially in the year 2011, November 15<sup>th</sup>.<br>
+      After several difficulties during its construnction, the temple was officially dedicated eight yars later, on June 2<sup>nd</sup>, 2019.<br>
+      The temple is located nearby one of the most beautiful beaches in the city. The address is Avenida Santos Dumont 7771, and it's currently on service.<br>
+      Read the dedicatory prayer <a
+        href="https://www.churchofjesuschrist.org/temples/details/fortaleza-brazil-temple/prayer/2019-06-02?lang=eng"
+        target="_blank">HERE</a>.</p>
     </section>
 
-    <section id="weather-grid">
-      <div class="current-weather">
-        <h3>Current Weather</h3>
-        <div id="current-weather-text" class="current-weather-text">
-          <p id="cw1">Currently: <span id="currently"></span></p>
-          <p id="cw2">Temperature: <span id="temperature"></span></p>
-          <p id="cw3">Humidity: <span id="humidity"></span></p>
-          <p id="cw4">Wind Speed: <span id="wind-speed"></span></p>
-          <p id="cw5">Wind Chill: <span id="wind-chill"></span></p>
-        </div>
+    <section id="weather">
+      <h3 class="small-shown">Fortaleza Brazil Temple Weather</h3>
+      <div id="wthalert"></div>
+      <img src="#" alt="" id="weather-icon">
+      <div id="weather-data">
+        <p id="temp"><span id="temp-now"></span>&deg;F</p>
+        <p id="humid-space">Humidity <span id="humidity"></span>%</p>
+        <p id="weather-desc"></p>
       </div>
-      <div class="forecast-weather">
-        <h3>3 Days Forecast</h3>
-        <div class="grid-forecast">
-      
-          <div class="subtitle" id="dayofweek1"></div>
-          <div id="weather-img1" class="weather-img">
-            <img src="" alt="" id="imgday1" class="weather-icon">
-            <p id="forecastmin1"></p>
-            <p id="forecastmax1"></p>
-          </div>
-      
-          <div class="subtitle" id="dayofweek2"></div>
-          <div id="weather-img2" class="weather-img">
-            <img src="" alt="" id="imgday2" class="weather-icon">
-            <p id="forecastmin2"></p>
-            <p id="forecastmax2"></p>
-          </div>
-      
-          <div class="subtitle" id="dayofweek3"></div>
-          <div id="weather-img3" class="weather-img">
-            <img src="" alt="" id="imgday3" class="weather-icon">
-            <p id="forecastmin3"></p>
-            <p id="forecastmax3"></p>
-          </div>
-      
+      <p id="daily-title">Daily Forecast</p>
+      <div id="daily">
+        <div id="day1">
+          <p id="date1"></p>
+          <p class="day-temp"><span id="day-temp1"></span>&deg;F</p>
+        </div>
+        <div id="day2">
+          <p id="date2"></p>
+          <p class="day-temp"><span id="day-temp2"></span>&deg;F</p>
+        </div>
+        <div id="day3">
+          <p id="date3"></p>
+          <p class="day-temp"><span id="day-temp3"></span>&deg;F</p>
         </div>
       </div>
     </section>
 
   </main>
+
   <footer>
     <div id="footer-logo">
-      <a href="./index.html"><img src="./images/logo_size_invert.webp" alt="inverted main logo"></a>
+      <a href="./index.html" target="_self"><img src="./images/logo_size_invert.webp" alt="temple inn and suites inversed logo" class="logo"></a>
+    </div>
+    <div id="footer-title">
+      <h1>Temple Inn & Suites</h1>
+      <h2>Comfort and Relax</h2>
     </div>
     <div>
-      <h6>
-        templeinnandsuites@email.com
-      </h6>
-    </div>
-    <div id="footer-map">
-      <a href="https://goo.gl/maps/ARVnEdsoSy5hWAMHA" target="_blank">
-        <img src="./images/temple_inn_map.png" alt="map to the temple inn" id="map-img">
-      </a>
-    </div>
-    <div>
-      <p>&copy; <span id="this-year">year</span> | Temple Inn & Suites | Weather forcast from <a href="https://openweathermap.org/">OpenWeatherMap</a></p>
+      <p>&copy; <span id="this-year"></span> Temple Inn & Suites | <span><a href="#">Contact Us</a></span></p>
+      <p>templeinnandsuites@email.com</p>
+      <p>4800 Montgomery Ln #300, Bethesda, MD 20814</p>
+      <p>&#9873;<a href="https://goo.gl/maps/ARVnEdsoSy5hWAMHA" target="_blank">Location</a></p>
+      <p class="credit">Weather provided by <a href="https://openweathermap.org">OpenWeatherMap</a></p>
+      <p id="date-modified"></p>
     </div>
   </footer>
 
-  <script src="./js/weather_forecast.js"></script>
-  <script src="./js/toggle-menu.js"></script>
-  <script src="./js/this-year.js"></script>
+  <script src="./js/last-modified.js" defer async></script>
+  <script src="./js/todays-date.js" defer async></script>
+  <script src="./js/toggle-menu.js" defer async></script>
+  <script src="./js/weather_forecast.js" defer async></script>
 
 </body>
 </html>
