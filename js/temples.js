@@ -10,13 +10,16 @@ function displayTemple(temple) {
   let legend1 = document.createElement('legend');
   let legend2 = document.createElement('legend');
   let legend3 = document.createElement('legend');
+  let legend4 = document.createElement('legend');
   let fieldset1 = document.createElement('fieldset');
   let fieldset2 = document.createElement('fieldset');
   let fieldset3 = document.createElement('fieldset');
+  let fieldset4 = document.createElement('fieldset');
   let p1 = document.createElement('p');
   let p2 = document.createElement('p');
   let p3 = document.createElement('p');
   let p4 = document.createElement('p');
+  let p5 = document.createElement('p');
   let a = document.createElement('a');
 
   h3.textContent = `${temple.name}`;
@@ -57,16 +60,18 @@ function displayTemple(temple) {
   fieldset3.appendChild(p4);
   card.appendChild(fieldset3);
 
+  legend4.textContent = 'Closures';
+  fieldset4.appendChild(legend4);
+  p5.innerHTML = `${temple.closure}`;
+  fieldset4.appendChild(p5);
+  card.appendChild(fieldset4);
+
   document.querySelector('#templelist').appendChild(card);
-  // let fieldset4 = document.createElement('fieldset');
-  // let legend4 = document.createElement('legend');
   // let fieldset5 = document.createElement('fieldset');
   // let legend5 = document.createElement('legend');
   // let p5 = document.createElement('p');
   // let p6 = document.createElement('p');
 
-  // legend4.textContent = 'Closures';
-  // fieldset4.appendChild(legend4);
   // p5.innerHTML = `${temple.closure}`;
   // fieldset4.appendChild(p5);
   // card.appendChild(fieldset4);
