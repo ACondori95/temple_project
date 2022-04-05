@@ -5,6 +5,7 @@ function displayTemple(temple) {
   let card = document.createElement('section');
   let h3 = document.createElement('h3');
   let likeImg = './images/dislike.svg';
+  let img1 = document.createElement('img');
   let img2 = document.createElement('img');
 
   h3.textContent = `${temple.name}`;
@@ -15,6 +16,12 @@ function displayTemple(temple) {
   img2.setAttribute('alt', 'like button');
   img2.setAttribute('class', 'like-button');
   card.appendChild(img2);
+
+  img1.setAttribute('src', `${temple.imageurl}`);
+  img1.setAttribute('alt', `${temple.name} photo`);
+  img1.setAttribute('loading', 'lazy');
+  card.appendChild(img1);
+
 
   document.querySelector('#templelist').appendChild(card);
   // let fieldset1 = document.createElement('fieldset');
@@ -34,13 +41,7 @@ function displayTemple(temple) {
   // let p5 = document.createElement('p');
   // let p6 = document.createElement('p');
   // let a = document.createElement('a');
-  // let img1 = document.createElement('img');
 
-  // img2.setAttribute('alt', 'like button');
-  // img2.setAttribute('class', 'like-button');
-  // card.appendChild(img2);
-
-  // img1.src = `${temple.imageurl}`;
   // img1.setAttribute8('alt', `${temple.name} photo`);
   // img1.setAttribute('loaging', 'lazy');
   // card.appendChild(img1);
