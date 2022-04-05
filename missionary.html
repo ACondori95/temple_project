@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Temple Inn & Suites</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+  <link rel="stylesheet" href="./css/base.css">
+  <link rel="stylesheet" href="./css/medium.css">
+  <link rel="stylesheet" href="./css/large.css">
+</head>
+
+<body>
+
+  <header>
+    <div id="header">
+      <a href="./index.html" target="_self"><img src="./images/logo_size.webp" alt="Temple Inn and Suites logo"
+          class="logo"></a>
+      <div id="header-title">
+        <h1>Temple Inn & Suites</h1>
+        <h2>Comfort and Relax</h2>
+      </div>
+      <div id="header-link">
+        <div>
+          <a href="https://facebook.com" target="_blank"><img src="./images/facebook.png" alt="facebook icon"
+              id="facebook"></a>
+          <a href="https://instagram.com" target="_blank"><img src="./images/instagram.png" alt="instagram icon"
+              id="instagram"></a>
+        </div>
+      </div>
+      <div id="header-date">
+        <h3 id="todays-date">today date</h3>
+      </div>
+      <nav id="header-nav">
+        <button id="hamburger-btn"><span>&#9776;</span><span>X</span></button>
+        <ul id="primary-nav">
+          <li><a href="./index.html">Home</a></li>
+          <li><a href="./temple.html">Temple</a></li>
+          <li><a href="./reservation.html">Reservation</a></li>
+          <li><a class="active" href="./services.html">Services</a>
+            <ul>
+              <li><a href="./reception.html">Reception</a></li>
+              <li><a href="./missionary.html">Temple Missionary</a></li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="missionary">
+
+    <h2>Full-time Temple Missionary Suites</h2>
+
+    <div id="room-pictures">
+      <img src="./images/hotel_bedroom.jpg" alt="bedroom image" class="room-show-sm hover-img">
+      <img src="./images/hotel_kitchen.jpg" alt="kitchen image" class="room-show-sm hover-img">
+      <img src="./images/hotel_bedroom2.jpg" alt="bedroom img" class="room-show-md hover-img">
+      <img src="./images/hotel_kitchen2.jpg" alt="kitchen img" class="room-show-bg hover-img">
+    </div>
+
+    <div>
+      
+    </div>
+
+  </main>
+
+  <footer>
+    <div id="footer-logo">
+      <a href="./index.html" target="_self"><img src="./images/logo_size_invert.webp"
+          alt="temple inn and suites inversed logo" class="logo"></a>
+    </div>
+    <div id="footer-title">
+      <h1>Temple Inn & Suites</h1>
+      <h2>Comfort and Relax</h2>
+    </div>
+    <div>
+      <p>&copy; <span id="this-year"></span> Temple Inn & Suites | <span><a href="#">Contact Us</a></span></p>
+      <p>templeinnandsuites@email.com</p>
+      <p>4800 Montgomery Ln #300, Bethesda, MD 20814</p>
+      <p>&#9873;<a href="https://goo.gl/maps/ARVnEdsoSy5hWAMHA" target="_blank">Location</a></p>
+      <p class="credit">Weather provided by <a href="https://openweathermap.org">OpenWeatherMap</a></p>
+      <p id="date-modified"></p>
+    </div>
+  </footer>
+
+  <script src="./js/last-modified.js" defer async></script>
+  <script src="./js/todays-date.js" defer async></script>
+  <script src="./js/toggle-menu.js" defer async></script>
+  <script src="./js/weather_forecast.js" defer async></script>
+
+</body>
+
+</html>
