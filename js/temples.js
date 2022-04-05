@@ -114,7 +114,7 @@ function displayTemples(business) {
 
   card.appendChild(h2);
 
-  img1.src = `${business.icon}`;
+  img1.src = `${business.imageurl}`;
   img1.setAttribute('alt', `${business.name} icon`);
   img1.setAttribute('loading', 'lazy');
   card.appendChild(img1);
