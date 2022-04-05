@@ -37,8 +37,8 @@
         <button id="hamburger-btn"><span>&#9776;</span><span>X</span></button>
         <ul id="primary-nav">
           <li><a href="./index.html">Home</a></li>
-          <li><a class="active" href="./temple.html">Temple</a></li>
-          <li><a href="./reservation.html">Reservation</a></li>
+          <li><a href="./temple.html">Temple</a></li>
+          <li><a class="active" href="./reservation.html">Reservation</a></li>
           <li><a href="./services.html">Services</a>
             <ul>
               <li><a href="./reception.html">Reception</a></li>
@@ -52,8 +52,96 @@
 
   <main>
 
-    <h2>Temple List</h2>
-    <div id="templelist"></div>
+    <h2>Room Reservation</h2>
+    <form method="get" action="thank_you.html">
+
+      <fieldset>
+        <legend>Accomodations</legend>
+        <label for="temple-loc" class="top">Choose a temple location</label>
+        <select name="location" id="temple-loc" class="top" required>
+          <option selected disabled hidden value=""></option>
+          <option value="Fortaleza">Fortaleza - Brazil</option>
+          <option value="Salt Lake">Salt Lake City - Utah</option>
+          <option value="Buenos Aires">Buenos Aires - Argentina</option>
+          <option value="Cordoba">Cordoba - Argentina</option>
+        </select>
+        <label class="top">Start Date* 
+          <input 
+            type="date"
+            name="start-date" 
+            required>
+        </label>
+        <label class="top">End Date*
+          <input
+            type="date"
+            name="end-date"
+            required>
+        </label>
+        <div>Room Type</div>
+        <label class="side">
+          <input
+            type="radio"
+            name="room"
+            value="single"> Single
+        </label>
+        <label class="side">
+          <input 
+            type="radio"
+            name="room"
+            value="double"> Double
+        </label>
+      </fieldset>
+
+      <fieldset>
+        <legend>Contact</legend>
+        <label class="top">First Name* 
+          <input 
+            type="text" 
+            name="first-name" 
+            required>
+        </label>
+        <label class="top">Last Name* 
+          <input 
+            type="text" 
+            name="last-name" 
+            required>
+        </label>
+        <label class="top">Home State / Country* 
+          <input 
+            type="text" 
+            name="home-state" 
+            required>
+        </label>
+        <label class="top">Email* 
+          <input 
+            type="email" 
+            name="email" 
+            placeholder="example@email.com" 
+            required>
+        </label>
+        <label class="top">Phone
+          <input 
+            type="tel" 
+            name="phonenum" 
+            placeholder="123-333-4444">
+        </label>
+      </fieldset>
+
+      <fieldset>
+        <legend>Comments</legend>
+        <label class="top">Leave yout comment here:
+          <textarea 
+            name="comments" 
+            rows="10" 
+            cols="40" 
+            placeholder="comment here">
+          </textarea>
+        </label>
+      </fieldset>
+      
+      <input type="submit" value="Make Reservation" class="submit-btn">
+
+    </form>
 
   </main>
 
@@ -79,8 +167,6 @@
   <script src="./js/last-modified.js" defer async></script>
   <script src="./js/todays-date.js" defer async></script>
   <script src="./js/toggle-menu.js" defer async></script>
-  <script src="./js/weather_forecast.js" defer async></script>
-  <script src="./js/temples.js"></script>
 
 </body>
 

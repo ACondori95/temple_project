@@ -30,7 +30,7 @@ function displayTemple(temple) {
   let likeImage = './images/dislike.svg';
   img2.src = `${likeImage}`;
   img2.setAttribute('alt', 'like button');
-  img2.setAttribute('loaging', 'lazy');
+  img2.setAttribute('class', 'like-button');
   card.appendChild(img2);
 
   img1.src = `${temple.imageurl}`;
@@ -77,10 +77,19 @@ function displayTemple(temple) {
   document.querySelector('#templelist').appendChild(card);
 }
 
-getTemples();
 
-async function getTemples() {
-  const response = await fetch(requestData);
-  const temples = await response.json();
-  temples.forEach(displayTemple);
-}
+// async function getTemples() {
+//   const response = await fetch(requestData);
+//   const temples = await response.json();
+//   temples.forEach(displayTemple);
+// }
+
+fetch(requestData)
+  .then(function (response) {
+    return response.json();
+  })
+  .then(function (jsonObject) {
+    console.table(jsonObject);
+    const temples = jsonObject['temples'];
+    temples.forEach(displayTemple);
+  })
