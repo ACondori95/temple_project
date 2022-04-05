@@ -1,5 +1,4 @@
-{
-  "temples": [
+[
     {
       "name": "Fortaleza Brazil Temple",
       "status" : "PHASE 3: ALL LIVING ORDINANCES AND LIMITED PROXY ORDINANCES",
@@ -44,5 +43,4 @@
       "closure": "15 Apr 2022 (Limited Operations)\n21 Apr 2022 (Limited Operations)\n1 Oct 2022\n15 Nov 2022\n24 Dec 2022\n31 Dec 2022",
       "imageurl": "https://acondori95.github.io/temple_project/images/temple_pictures/cordoba_argentina800.jpeg"
     }
-  ]
-}
+]
