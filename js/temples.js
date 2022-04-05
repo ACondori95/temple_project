@@ -1,5 +1,6 @@
 const requestData = 'https://acondori95.github.io/temple_project/data/temples.json';
 
+
 function displayTemple(temple) {
   let card = document.createElement('section');
   let h3 = document.createElement('h3');

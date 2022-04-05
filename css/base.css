@@ -600,3 +600,9 @@ form select.top:required:valid,
 form label.top input:required:valid {
   border-left: 6px solid green;
 }
+
+/* SERVICES */
+
+.services h3 {
+  display: block;
+}
