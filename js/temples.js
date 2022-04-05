@@ -1,5 +1,4 @@
-const requestData = 'https://acondori95.github.io/temple_project/data/temples.json';
-
+const requestData = './data/temples.json';
 
 function displayTemple(temple) {
   let card = document.createElement('section');
@@ -29,12 +28,12 @@ function displayTemple(temple) {
   h3.setAttribute('class', 'temple-name small-shown');
   card.appendChild(h3);
 
-  img2.setAttribute('src', `${likeImg}`);
+  img2.src = `${likeImg}`;
   img2.setAttribute('alt', 'like button');
   img2.setAttribute('class', 'like-button');
   card.appendChild(img2);
 
-  img1.setAttribute('src', `${temple.imageurl}`);
+  img1.src = temple.imageurl;
   img1.setAttribute('alt', `${temple.name} photo`);
   img1.setAttribute('loading', 'lazy');
   card.appendChild(img1);
@@ -78,7 +77,6 @@ function displayTemple(temple) {
   document.querySelector('#templelist').appendChild(card);
 }
 
-
 console.log('Load Directory');
 getDirectory();
 
@@ -88,5 +86,3 @@ async function getDirectory() {
   const temple_dir = await response.json();
   temple_dir.forEach(displayTemple);
 }
-
-
