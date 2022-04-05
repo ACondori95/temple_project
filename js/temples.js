@@ -4,14 +4,19 @@ const requestData = 'https://acondori95.github.io/temple_project/data/temples.js
 function displayTemple(temple) {
   let card = document.createElement('section');
   let h3 = document.createElement('h3');
+  let likeImg = './images/dislike.svg';
+  let img2 = document.createElement('img');
 
   h3.textContent = `${temple.name}`;
   h3.setAttribute('class', 'temple-name small-shown');
   card.appendChild(h3);
 
+  img2.setAttribute('src', `${likeImg}`);
+  img2.setAttribute('alt', 'like button');
+  img2.setAttribute('class', 'like-button');
+  card.appendChild(img2);
+
   document.querySelector('#templelist').appendChild(card);
-  // let card = document.createElement('section');
-  // let h3 = document.createElement('h3');
   // let fieldset1 = document.createElement('fieldset');
   // let legend1 = document.createElement('legend');
   // let fieldset2 = document.createElement('fieldset');
@@ -30,14 +35,7 @@ function displayTemple(temple) {
   // let p6 = document.createElement('p');
   // let a = document.createElement('a');
   // let img1 = document.createElement('img');
-  // let img2 = document.createElement('img');
 
-  // h3.textContent = `${temple.name}`;
-  // h3.setAttribute('class', 'temple-name small-shown');
-  // card.appendChild(h3);
-
-  // let likeImage = './images/dislike.svg';
-  // img2.src = `${likeImage}`;
   // img2.setAttribute('alt', 'like button');
   // img2.setAttribute('class', 'like-button');
   // card.appendChild(img2);

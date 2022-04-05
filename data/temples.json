@@ -8,7 +8,7 @@
       "history": "Announcement: 3 Oct 2009\nGroudbreaking: 15 Nov 2011\nDedication: 2 Jun 2019",
       "ordinance": "https://www.churchofjesuschrist.org/temples/details/fortaleza-brazil-temple?lang=eng",
       "closure": "15 Apr 2022 (Limited Operations)\n21 Apr 2022 (Limited Operations)\n1 Oct 2022\n15 Nov 2022\n24 Dec 2022\n31 Dec 2022",
-      "imageurl": "https://acondori95.github.io/temple_project/images/temple_pictures/fortaleza_temple800.jpeg"
+      "imageurl": "./images/temples_pictures/fortaleza_temple800.jpeg"
     },
     {
       "name": "Salt Lake Temple",
@@ -19,7 +19,7 @@
       "history": "Announcement: 28 Jul 1847\nGroudbreaking: 14 Feb 1853\nDedication: 6 Apr 1893",
       "ordinance": "https://www.churchofjesuschrist.org/temples/details/salt-lake-temple?lang=eng",
       "closure": "The temple is currently closed because of major renovation works",
-      "imageurl": "https://acondori95.github.io/temple_project/images/temple_pictures/salt_lake_temple800.jpeg"
+      "imageurl": "./images/temples_pictures/salt_lake_temple800.jpeg"
     },
     {
       "name": "Buenos Aires Argentina Temple",
@@ -30,7 +30,7 @@
       "history": "Announcement: 2 Apr 1980\nGroudbreaking: 20 Apr 1983\nDedication: 17 Jan 1986\nRededication: 9 Sep 2012",
       "ordinance": "https://www.churchofjesuschrist.org/temples/details/buenos-aires-argentina-temple?lang=eng",
       "closure": "18 Apr 2022 - 2 May 2022\n18 May 2022 (Limited Operations)\n1 Oct 2022 (Limited Operations)\n3 Oct 2022 - 17 Oct 2022\n24 Dec 2022 - 25 Dec 2022\n31 Dec 2022 - 1 Jan 2023",
-      "imageurl": "https://acondori95.github.io/temple_project/images/temple_pictures/buenos_aires_argentina800.jpeg"
+      "imageurl": "./images/temples_pictures/buenos_aires_argentina800.jpeg"
     },
     {
       "name": "Córdoba Argentina Temple",
@@ -41,6 +41,6 @@
       "history": "Announcement: 4 Oct 2008\nGroudbreaking: 30 Oct 2010\nDedication: 17 May 2015",
       "ordinance": "https://www.churchofjesuschrist.org/temples/details/cordoba-argentina-temple?lang=eng",
       "closure": "15 Apr 2022 (Limited Operations)\n21 Apr 2022 (Limited Operations)\n1 Oct 2022\n15 Nov 2022\n24 Dec 2022\n31 Dec 2022",
-      "imageurl": "https://acondori95.github.io/temple_project/images/temple_pictures/cordoba_argentina800.jpeg"
+      "imageurl": "./images/temples_pictures/cordoba_argentina800.jpeg"
     }
 ]
