@@ -130,7 +130,7 @@ function displayBusiness(business) {
   a.target = '_blank';
   a.textContent = `${business.contact}`;
 
-  document.querySelector('#bizdir').appendChild(card);
+  document.querySelector('#templelist').appendChild(card);
 }
 
 console.log('Load Directory');
