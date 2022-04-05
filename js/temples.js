@@ -11,15 +11,18 @@ function displayTemple(temple) {
   let legend2 = document.createElement('legend');
   let legend3 = document.createElement('legend');
   let legend4 = document.createElement('legend');
+  let legend5 = document.createElement('legend');
   let fieldset1 = document.createElement('fieldset');
   let fieldset2 = document.createElement('fieldset');
   let fieldset3 = document.createElement('fieldset');
   let fieldset4 = document.createElement('fieldset');
+  let fieldset5 = document.createElement('fieldset');
   let p1 = document.createElement('p');
   let p2 = document.createElement('p');
   let p3 = document.createElement('p');
   let p4 = document.createElement('p');
   let p5 = document.createElement('p');
+  let p6 = document.createElement('p');
   let a = document.createElement('a');
 
   h3.textContent = `${temple.name}`;
@@ -66,23 +69,13 @@ function displayTemple(temple) {
   fieldset4.appendChild(p5);
   card.appendChild(fieldset4);
 
+  legend5.textContent = 'History';
+  fieldset5.appendChild(legend5);
+  p6.innerHTML = `${temple.history}`;
+  fieldset5.appendChild(p6);
+  card.appendChild(fieldset5);
+
   document.querySelector('#templelist').appendChild(card);
-  // let fieldset5 = document.createElement('fieldset');
-  // let legend5 = document.createElement('legend');
-  // let p5 = document.createElement('p');
-  // let p6 = document.createElement('p');
-
-  // p5.innerHTML = `${temple.closure}`;
-  // fieldset4.appendChild(p5);
-  // card.appendChild(fieldset4);
-
-  // legend5.textContent = 'History';
-  // fieldset5.appendChild(legend5);
-  // p6.innerHTML = `${temple.history}`;
-  // fieldset5.appendChild(p6);
-  // card.appendChild(fieldset5);
-
-  // document.querySelector('#templelist').appendChild(card);
 }
 
 
@@ -97,53 +90,3 @@ async function getDirectory() {
 }
 
 
-
-// const requestData = "https://acondori95.github.io/wdd230/chamber/data/data.json";
-
-// function displayTemples(business) {
-//   let card = document.createElement('section');
-//   let h3 = document.createElement('h3');
-//   let p1 = document.createElement('p');
-//   let p2 = document.createElement('p');
-//   let p3 = document.createElement('p');
-//   let p4 = document.createElement('p');
-//   let p5 = document.createElement('p');
-//   let p6 = document.createElement('p');
-//   let a = document.createElement('a');
-//   let img1 = document.createElement('img');
-
-//   h2.textContent = `${business.name}`;
-//   h2.setAttribute('id','bizname');
-
-//   card.appendChild(h2);
-
-//   img1.src = `${business.imageurl}`;
-//   img1.setAttribute('alt', `${business.name} icon`);
-//   img1.setAttribute('loading', 'lazy');
-//   card.appendChild(img1);
-
-//   p1.textContent = `${business.address}`;
-//   card.appendChild(p1);
-
-//   p2.innerHTML = `${business.address}`;
-//   card.appendChild(p2);
-
-//   p3.textContent = `${business.phone}`;
-//   card.appendChild(p3);
-
-//   a.href = `${business.website}`;
-//   a.target = '_blank';
-//   a.textContent = `${business.contact}`;
-
-//   document.querySelector('#templelist').appendChild(card);
-// }
-
-// console.log('Load Directory');
-// getDirectory();
-
-// async function getDirectory() {
-//   console.log('get data');
-//   const response = await fetch(requestData);
-//   const business_dir = await response.json();
-//   business_dir.forEach(displayTemples);
-// }
