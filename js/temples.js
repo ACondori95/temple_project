@@ -85,8 +85,8 @@ getDirectory();
 async function getDirectory() {
   console.log('get data');
   const response = await fetch(requestData);
-  const business_dir = await response.json();
-  business_dir.forEach(displayTemples);
+  const temple_dir = await response.json();
+  temple_dir.forEach(displayTemple);
 }
 
 
