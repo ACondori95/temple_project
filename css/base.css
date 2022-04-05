@@ -606,3 +606,27 @@ form label.top input:required:valid {
 .services h3 {
   display: block;
 }
+
+/* MISSIONARY */
+
+#room-pictures {
+  display: flex;
+  flex-direction: row;
+}
+
+#room-pictures img {
+  width: 48%;
+  border: 3px solid var(--warm-black);
+}
+
+.room-show-sm {
+  display: block;
+}
+
+.room-show-md {
+  display: none;
+}
+
+.room-show-bg {
+  display: none;
+}
