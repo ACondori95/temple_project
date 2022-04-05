@@ -8,9 +8,12 @@ function displayTemple(temple) {
   let img1 = document.createElement('img');
   let img2 = document.createElement('img');
   let legend1 = document.createElement('legend');
+  let legend2 = document.createElement('legend');
   let fieldset1 = document.createElement('fieldset');
+  let fieldset2 = document.createElement('fieldset');
   let p1 = document.createElement('p');
   let p2 = document.createElement('p');
+  let p3 = document.createElement('p');
   let a = document.createElement('a');
 
   h3.textContent = `${temple.name}`;
@@ -39,29 +42,22 @@ function displayTemple(temple) {
   fieldset1.appendChild(a);
   card.appendChild(fieldset1);
 
+  legend2.textContent = 'Status';
+  fieldset2.appendChild(legend2);
+  p3.textContent = `${temple.status}`;
+  fieldset2.appendChild(p3);
+  card.appendChild(fieldset2);
+
   document.querySelector('#templelist').appendChild(card);
-  // let fieldset2 = document.createElement('fieldset');
-  // let legend2 = document.createElement('legend');
   // let fieldset3 = document.createElement('fieldset');
   // let legend3 = document.createElement('legend');
   // let fieldset4 = document.createElement('fieldset');
   // let legend4 = document.createElement('legend');
   // let fieldset5 = document.createElement('fieldset');
   // let legend5 = document.createElement('legend');
-  // let p2 = document.createElement('p');
-  // let p3 = document.createElement('p');
   // let p4 = document.createElement('p');
   // let p5 = document.createElement('p');
   // let p6 = document.createElement('p');
-
-  // fieldset1.appendChild(a);
-  // card.appendChild(fieldset1);
-
-  // legend2.textContent = 'Status';
-  // fieldset2.appendChild(legend2);
-  // p3.textContent = `${temple.status}`;
-  // fieldset2.appendChild(p3);
-  // card.appendChild(fieldset2);
 
   // legend3.textContent = 'Services';
   // fieldset3.appendChild(legend3);
