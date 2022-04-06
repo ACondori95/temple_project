@@ -75,6 +75,13 @@ function displayTemple(temple) {
   card.appendChild(fieldset5);
 
   document.querySelector('#templelist').appendChild(card);
+
+  // function addLike() {
+  //   num_likes++;
+  //   localStorage.setItem(like.id, num_likes);
+  //   window.location.reload();
+  // }
+  // like.onclick = addLike;
 }
 
 console.log('Load Directory');

@@ -76,14 +76,29 @@
     grid-row: 1/2;
   }
 
-  #weather {
+  #info {
+    grid-column: 1/18;
+    grid-row: 2/3;
+  }
+
+  #temple-img1 {
     grid-column: 19/37;
     grid-row: 2/3;
   }
 
+  #temple-img2 {
+    grid-column: 1/18;
+    grid-row: 3/4;
+  }
+
+  #weather {
+    grid-column: 19/37;
+    grid-row: 3/4;
+  }
+
   #temple-info {
     grid-column: 1/37;
-    grid-row: 3/4;
+    grid-row: 4/5;
     display: flex;
     flex-direction: row;
   }
